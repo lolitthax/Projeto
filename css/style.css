@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body,html{
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+    height: 100%;
+   
+    
+}
+
+header{
+    background-color: brown;
+    height: 400px;
+}
+
+
+.wrapper-section{
+    padding: 0 10px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.title{
+   color:rgba(30, 39, 46,1.0);
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+}
+
+.description{
+    color:rgba(30, 39, 46,1.0);
+    text-align: center;
+}
+
+.text{
+    text-align: justify;
+    padding: 10px 5px;
+}
+
+.border{
+    width: 50%;
+    border: 1px solid #c1c9d1;
+}
+
+.nome, .email, .nickname{
+ background: none;
+ border:none;
+ border-bottom: 1px solid;
+ color: #c1c9d1;
+ padding: 10px 6px;
+ margin: 10px 20px;
+ width: 80%;
+ font-size: large;
+ outline: none;
+}
+
+form p > a{
+    color:#4bcffa;
+    font-weight: bold;
+}
+
+.accordion-item{
+    background-color:rgba(255, 94, 87,1.0);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-link{
+    color:white;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+}
+
+.answer{
+    color: white;
+}
+
+.accordion-link > ion-icon{
+   font-size: 1.5rem;
+   float:right;
+   
+}
+.photo{
+    text-align: center;
+}
+.photo > img{
+    height: 400px;
+    width: 300px;
+}
+
+.container-timeline{
+    /* padding: 10px; */
+    position:relative;
+}
+
+.container-timeline:before{
+    content:'';
+    width:8px;
+    height: 100%;
+    background:#313131;
+    position:absolute;
+    /* left:20px; */
+}
+
+.content-timeline{
+    background:rgba(241, 242, 246,1.0);
+    padding:20px;
+    margin: 20px 60px;
+    width:180px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.content-timeline:before{
+content: '';
+width:20px;
+height: 20px;
+background-color: white;
+left: -10px;
+transform: translateY(-50%) rotate(45deg);
+}
+.content-timeline:after{
+    content: '';
+    width:36px;
+    height: 36px;
+    border: 4px solid black;
+    background-image: url(../img/leisure.svg);
+    background-color: #ff6348;
+    border-radius: 50%;
+    position:absolute;
+    left: -58px;
+    top:50%;
+    transform: translateY(-50%) ;
+    }
+@media screen and (min-width:1366px){
+    .wrapper-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 4em;
+        padding: 1em 4em;
+    }
+    .content-timeline{
+        width: 600px;
+    }
+}
