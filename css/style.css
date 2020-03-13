@@ -5,9 +5,7 @@ body,html{
     font-family: 'Roboto', sans-serif;
     font-size: large;
     box-sizing: border-box;
-    height: 100%;
-   
-    
+    height: 100%;  
 }
 
 header{
@@ -117,12 +115,12 @@ form p > a{
 }
 
 .content-timeline:before{
-content: '';
-width:20px;
-height: 20px;
-background-color: white;
-left: -10px;
-transform: translateY(-50%) rotate(45deg);
+    content: '';
+    width:20px;
+    height: 20px;
+    background-color: white;
+    left: -10px;
+    transform: translateY(-50%) rotate(45deg);
 }
 .content-timeline:after{
     content: '';
@@ -136,7 +134,29 @@ transform: translateY(-50%) rotate(45deg);
     left: -58px;
     top:50%;
     transform: translateY(-50%) ;
-    }
+}
+
+.team-div{
+   text-align: center;
+}
+.po{
+    padding:40px 0;
+    
+}
+
+.po img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    
+}
+.p-name{
+    color:rgba(255, 94, 87,1.0);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
 @media screen and (min-width:1366px){
     .wrapper-section{
         grid-template-columns: 1fr 1fr;
@@ -144,7 +164,20 @@ transform: translateY(-50%) rotate(45deg);
         grid-column-gap: 4em;
         padding: 1em 4em;
     }
+
+    input:hover{
+        color: #4bcffa;
+        margin:10px
+    }
+
     .content-timeline{
         width: 600px;
     }
+    
+    .container-timeline:before{
+        height: 700px;
+    }
+   
+
+    
 }
