@@ -9,9 +9,32 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <div class="container-header">
+        <header>
+       <nav>
+           <div class="menu-box" id="menu">
+            <ion-icon size="large" name="menu-outline"></ion-icon>
+           </div>
+           <div class="box-logo">
+               <a href="#">logotipo</a>
+           </div>
+           <div class="main-menu " id="main-menu">
+               <ul>
+                   <li><a href="#"></a>Exemplo</li>
+                   <li><a href="#"></a>Exemplo</li>
+                   <li><a href="#"></a>Exemplo</li>
+                   <li><a href="#"></a>Exemplo</li>
+                   <li><a href="#"></a>Exemplo</li>
+                   
+               </ul>
+           </div>
+           <div class="box-registrate">
+            <ion-icon  size="large" name="person-outline"></ion-icon>
+           </div>
+       </nav>
+        </header>
+    </div>
+    
     <section class="wrapper-section">
         <div class="content">
             <h2 class="title">Inscrição</h2>
@@ -24,7 +47,8 @@
                 <input type="text" placeholder="Nome" name="nome" class="nome" />
                 <input type="email" placeholder="E-mail" name="email" class="email" />
                 <input type="text" placeholder="Nickname/Apelido" name="nickname" class="nickname" />
-                <p><input type="checkbox" name="checked" id="chk">Li e concordo com todos os <a href="#">termos</a></p>
+                <p><input type="checkbox" name="checked" id="chk">Sim, eu li todo o <a href="#">regulamento.</a></p>
+                <button type="submit">Inscrever-se</button>
             </form>
         </div>
 
@@ -33,49 +57,52 @@
             <hr class="border" />
             <div class="container">
                 <div class="accordion">
-                    <div class="accordion-item" id="question1">
-                        <a href="#question1" class="accordion-link">
-                            #pergunta 1
-                            <ion-icon name="remove-circle-outline"></ion-icon>
-                            <ion-icon name="add-circle-outline"></ion-icon>
-
-                        </a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis amet
-                            aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
-                            aliquid ullam quo, delectus incidunt.
-                        </div>
-                    </div>
-                    <div class="accordion-item" id="question2">
-                        <a href="#question2" class="accordion-link">
-                            #pergunta 2
-                            <ion-icon name="remove-circle-outline"></ion-icon>
-                            <ion-icon name="add-circle-outline"></ion-icon>
-
-                        </a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis amet
-                            aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
-                            aliquid ullam quo, delectus incidunt.
-                        </div>
-                    </div>
-                    <div class="accordion-item" id="question">
-                        <a href="#question3" class="accordion-link">
+                    <div class="accordion-item">
+                        <p class="accordion-link">
                             #pergunta 3
-                            <ion-icon name="remove-circle-outline"></ion-icon>
-                            <ion-icon name="add-circle-outline"></ion-icon>
-                        </a>
+                        </p>
                         <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis amet
-                            aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
-                            aliquid ullam quo, delectus incidunt.
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis
+                                amet
+                                aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
+                                aliquid ullam quo, delectus incidunt.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-link">
+                            #pergunta 3
+                        </p>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis
+                                amet
+                                aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
+                                aliquid ullam quo, delectus incidunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <p class="accordion-link">
+                            #pergunta 3
+                        </p>
+                        <div class="answer">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dicta sequi corporis
+                                amet
+                                aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
+                                aliquid ullam quo, delectus incidunt.
+                            </p>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="photo">
-            <img src="img/player1.svg" alt="Imagem de um jogador em seu computador" />
+            <img src="img/player.svg" alt="Imagem de um jogador em seu computador" />
         </div>
         <div class="container-timeline">
             <div class="content-timeline">
@@ -95,7 +122,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, saepe, odio dolorem nemo quas
                     repudiandae magnam adipisci tempore molestiae, deserunt fugit! Aspernatur debitis id eaque repellat
                     corrupti iste nam dicta!</p>
+                    
+                    <p>Precisa de mais informação? leia o nosso <a href="http://google.com" target="_blank" rel="noopener noreferrer"><span>regulamento</span></a> &#128536;</p>
+                
             </div>
+           
         </div>
         <div class="team-div">
             <h2 class="title">Organizadores</h2>
@@ -123,11 +154,20 @@
                 </div>
                 <div class="po">
                     <img src="img/paisagem.jpg" alt="teste">
+                    <div class="p-name">Marcos Silva</div>
+                    <div class="p-desc">Colaborador</div>
+                </div>
+                <div class="po">
+                    <img src="img/paisagem.jpg" alt="teste">
                     <div class="p-name">Prisicila Agda</div>
                     <div class="p-desc">Dir. Secretariado</div>
                 </div>
+               
             </div>
 
+        </div>
+        <div class="photo">
+            <img src="img/team.svg" alt="Imagem de amigos se cumprimentando" />
         </div>
     </section>
 
@@ -135,7 +175,9 @@
     <footer>
 
     </footer>
+    <script src="path/to/vanilla.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 

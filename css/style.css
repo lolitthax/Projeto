@@ -4,16 +4,70 @@ body,html{
     margin:0;
     font-family: 'Roboto', sans-serif;
     font-size: large;
+    height: 100%; 
+    background-color: 236, 240, 241 ; 
+}
+*,::after,::before{
     box-sizing: border-box;
-    height: 100%;  
 }
 
-header{
-    background-color: brown;
-    height: 400px;
-}
+ ul{
+     margin:0;
+     padding:0;
+     list-style:none;
+ } 
+ li{
+    text-transform: uppercase;
+     text-align: center;
+     font-size: medium;
+     padding: .5em;
+     color:white;
+     text-decoration: none;
+ }
+ li:hover{
+     font-size: large;
+     text-decoration: line-through;
+    font-weight: bolder;
+ }
 
-
+ .container-header{
+     width: 100%;
+     background-color:rgba(255, 94, 87,1.0);
+ }
+ nav{
+     display: flex;
+     height: 7rem;
+     justify-content:space-around;
+     align-items: center;
+     background-color:rgba(255, 94, 87,1.0);
+     padding: 0 1rem;
+ }
+ .menu-box,.box-registrate{
+     padding: .4rem .6rem;
+     border-radius: .3rem;
+     color: white;
+     border: 1px solid white;
+     z-index: 10;
+ }
+ .main-menu{
+     position:absolute;
+     top:-40rem;
+     left:0;
+     width:100%;
+     padding: 1.2rem;
+     text-align: center;
+     border-radius:  1rem;
+     background-color:rgba(255, 94, 87,1.0);
+     z-index: 5;
+     transition: 1s;
+ }
+ li{
+     margin-bottom:1rem;
+ }
+ .mostrar{
+     top: 2.9rem;
+     transition: 1s;
+ }
 .wrapper-section{
     padding: 0 10px 0 10px;
     max-width: 100vw;
@@ -55,17 +109,24 @@ header{
  outline: none;
 }
 
-form p > a{
+form p > a , span{
     color:#4bcffa;
     font-weight: bold;
 }
-
+form > button{
+    padding: 20px 30px;
+    background:  rgba(255, 94, 87,1.0);
+    border: 1px solid;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
 .accordion-item{
     background-color:rgba(255, 94, 87,1.0);
     padding: 1rem;
     margin-bottom: 1rem;
 }
-
 .accordion-link{
     color:white;
     text-align: left;
@@ -75,14 +136,10 @@ form p > a{
   
 }
 
-.answer{
+.answer p{
+    text-align: justify;
     color: white;
-}
-
-.accordion-link > ion-icon{
-   font-size: 1.5rem;
-   float:right;
-   
+    
 }
 .photo{
     text-align: center;
@@ -91,6 +148,7 @@ form p > a{
     height: 500px;
     width: 350px;
 }
+
 
 .container-timeline{
     /* padding: 10px; */
@@ -156,14 +214,35 @@ form p > a{
     text-transform: uppercase;
     font-size: 16px;
 }
-
+@media screen and (min-width: 768px){
+    .menu-box > ion-icon{
+        display:none;
+    }
+    .menu-box{
+        display:none;
+    }
+    .main-menu{
+        position:initial;
+        flex-basis: 60%;
+        padding: 0 1rem;
+        border-bottom:0;
+        z-index:0;
+        transition:0;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        margin-bottom: 0;
+    }
+}
 @media screen and (min-width:1366px){
     .wrapper-section{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-row-gap: 4em;
         grid-column-gap: 4em;
-        
         padding: 1em 4em;
     }
 
@@ -171,7 +250,10 @@ form p > a{
         color: #4bcffa;
         margin:10px
     }
-
+    form > button:hover{
+        background-color: #e55039;
+    }
+   
     section > div {
         max-width: 100vh;
     }
@@ -200,4 +282,26 @@ form p > a{
     }
 
     
+}
+@media screen and (min-width:414px){
+    .text{
+        font-size: medium; 
+    } 
+}
+
+  
+@media screen and (min-width:1000px){
+    
+    .content-timeline{
+        width: 600px;
+    }
+    .photo > img{
+        height: 800px;
+        width: 500px;
+    }
+    .person {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
 }
