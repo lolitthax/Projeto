@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Eventos</title>
 </head>
@@ -11,30 +13,57 @@
 <body>
     <div class="container-header">
         <header>
-       <nav>
-           <div class="menu-box" id="menu">
-            <ion-icon size="large" name="menu-outline"></ion-icon>
-           </div>
-           <div class="box-logo">
-               <a href="#">logotipo</a>
-           </div>
-           <div class="main-menu " id="main-menu">
-               <ul>
-                   <li><a href="#"></a>Exemplo</li>
-                   <li><a href="#"></a>Exemplo</li>
-                   <li><a href="#"></a>Exemplo</li>
-                   <li><a href="#"></a>Exemplo</li>
-                   <li><a href="#"></a>Exemplo</li>
-                   
-               </ul>
-           </div>
-           <div class="box-registrate">
-            <ion-icon  size="large" name="person-outline"></ion-icon>
-           </div>
-       </nav>
-        </header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="eventos.html">
+                        <img src="img/Logo-Fatec-Jr-RGB.svg" class="logo" alt="logotipo da Fatec Jr.">
+                    </a>
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Início
+                        </a>
+
+                        <a class="navbar-item">
+                            Sobre nós
+                        </a>
+                        <a class="navbar-item">
+                            Eventos
+                        </a>
+                        <a class="navbar-item">
+                            Projetos
+                        </a>
+                        <a class="navbar-item">
+                            Contato
+                        </a>
+
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button">
+                                    <strong>Login</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     </div>
-    
+
+    </header>
+
+
     <section class="wrapper-section">
         <div class="content">
             <h2 class="title">Inscrição</h2>
@@ -95,7 +124,7 @@
                                 aperiam, suscipit nemo ipsam optio architecto eum commodi, deserunt totam voluptatum aut
                                 aliquid ullam quo, delectus incidunt.
                             </p>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -122,11 +151,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, saepe, odio dolorem nemo quas
                     repudiandae magnam adipisci tempore molestiae, deserunt fugit! Aspernatur debitis id eaque repellat
                     corrupti iste nam dicta!</p>
-                    
-                    <p>Precisa de mais informação? leia o nosso <a href="http://google.com" target="_blank" rel="noopener noreferrer"><span>regulamento</span></a> &#128536;</p>
-                
+
+                <p>Precisa de mais informação? leia o nosso <a href="http://google.com" target="_blank"
+                        rel="noopener noreferrer"><span>regulamento</span></a> &#128536;</p>
+
             </div>
-           
+
         </div>
         <div class="team-div">
             <h2 class="title">Organizadores</h2>
@@ -162,7 +192,7 @@
                     <div class="p-name">Prisicila Agda</div>
                     <div class="p-desc">Dir. Secretariado</div>
                 </div>
-               
+
             </div>
 
         </div>
@@ -170,13 +200,39 @@
             <img src="img/team.svg" alt="Imagem de amigos se cumprimentando" />
         </div>
     </section>
-
-
     <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="img/Logo-Fatec-Jr-RGB.svg" alt="logo da Fatec Jr." class="logo">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rights-text">© 2020 Created By Fatec Jr. All rights reserved.</p>
+            </div>
 
+            <div class="right-col">
+                <img src="img/logo fatec.svg" alt="logotipo Fatec Taquaritinga" class="logo1">
+                <img src="img/cps (1).svg" alt="Logo Centro Paula Souza" class="logo1">
+                <img src="img/gov2.svg" alt="Logo governo do estado de São Paulo" class="logo1">
+                
+                <h1>Onde estamos?</h1>
+                <div class="border1"></div>
+                <p>Av. Dr. Flávio Henrique Lemos, 585
+                    Portal Itamaracá, Taquaritinga - SP
+                    CEP: 15906-522 .</p>
+                <p>Telefones: (16) 3252-5250
+                    (16) 3252-5152</p>
+                    
+            </div>
+        </div>
     </footer>
+
     <script src="path/to/vanilla.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="js/function.js"></script>
 </body>
 

@@ -6,68 +6,14 @@ body,html{
     font-size: large;
     height: 100%; 
     background-color: 236, 240, 241 ; 
-}
-*,::after,::before{
     box-sizing: border-box;
 }
+nav{
+    border-bottom: 1px solid lightcoral;
+    
+}
 
- ul{
-     margin:0;
-     padding:0;
-     list-style:none;
- } 
- li{
-    text-transform: uppercase;
-     text-align: center;
-     font-size: medium;
-     padding: .5em;
-     color:white;
-     text-decoration: none;
- }
- li:hover{
-     font-size: large;
-     text-decoration: line-through;
-    font-weight: bolder;
- }
 
- .container-header{
-     width: 100%;
-     background-color:rgba(255, 94, 87,1.0);
- }
- nav{
-     display: flex;
-     height: 7rem;
-     justify-content:space-around;
-     align-items: center;
-     background-color:rgba(255, 94, 87,1.0);
-     padding: 0 1rem;
- }
- .menu-box,.box-registrate{
-     padding: .4rem .6rem;
-     border-radius: .3rem;
-     color: white;
-     border: 1px solid white;
-     z-index: 10;
- }
- .main-menu{
-     position:absolute;
-     top:-40rem;
-     left:0;
-     width:100%;
-     padding: 1.2rem;
-     text-align: center;
-     border-radius:  1rem;
-     background-color:rgba(255, 94, 87,1.0);
-     z-index: 5;
-     transition: 1s;
- }
- li{
-     margin-bottom:1rem;
- }
- .mostrar{
-     top: 2.9rem;
-     transition: 1s;
- }
 .wrapper-section{
     padding: 0 10px 0 10px;
     max-width: 100vw;
@@ -95,6 +41,7 @@ body,html{
 .border{
     width: 50%;
     border: 1px solid #c1c9d1;
+    margin: 0 auto 10px;
 }
 
 .nome, .email, .nickname{
@@ -171,8 +118,13 @@ form > button{
     width: 270px;
     border-radius: 8px;
     position: relative;
+    
 }
-
+.content-timeline h2{
+    color:#d63031;
+    font-weight: bold;
+    font-size: large;
+}
 .content-timeline:before{
     content: '';
     width:20px;
@@ -209,34 +161,95 @@ form > button{
     
 }
 .p-name{
-    color:rgba(255, 94, 87,1.0);
+    color:#d63031;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
 }
-@media screen and (min-width: 768px){
-    .menu-box > ion-icon{
-        display:none;
+footer{
+    background: #f1f1f1;
+    padding: 90px 0;
+  }
+  
+  .footer-container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .logo, .logo1{
+    width: 180px;
+  }
+  .logo1{
+      margin-left: 20px;
+  }
+  .social-media{
+    margin: 20px 0;
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #d63031;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .border1{
+    width: 100px;
+    height: 4px;
+    background: #d63031;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+    .footer-container{
+      max-width: 600px;
     }
-    .menu-box{
-        display:none;
+    .right-col{
+      width: 100%;
+      margin-bottom: 60px;
     }
-    .main-menu{
-        position:initial;
-        flex-basis: 60%;
-        padding: 0 1rem;
-        border-bottom:0;
-        z-index:0;
-        transition:0;
+  
+    .left-col{
+      width: 100%;
+      text-align: center;
     }
-    ul{
-        display: flex;
-        justify-content: space-between;
-    }
-    li{
-        margin-bottom: 0;
-    }
-}
+  }
+  
+
 @media screen and (min-width:1366px){
     .wrapper-section{
         grid-template-columns: 1fr 1fr;
