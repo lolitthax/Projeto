@@ -1,25 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-  
-      // Add a click event on each of them
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-  
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-  
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-  
-        });
-      });
-    }
-  
-  });
+function animeScroll() {
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    target.forEach(function(element) {
+        if ((windowTop) > element.offsetTop) {
+            element.classList.add(animationClass)
+        }
+
+        console.log(element.offsetTop)
+    })
+}
+
+window.addEventListener('scroll', function() {
+    animeScroll();
+})
