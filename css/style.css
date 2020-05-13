@@ -19,6 +19,44 @@ header {
     align-items: center;
 }
 
+
+/* menu hamburguer ao clicar */
+
+
+/* para habilitar deixe o logo e o menu barra display:none */
+
+
+/* .menu-mobile {
+    height: 400px;
+    width: 900px;
+    background-color: #d63031;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-menu-mobile a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    margin: 30px;
+}
+
+#login-mobile {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+} */
+
+
+/* final menu burguer ao clicar */
+
 .menu-bars {
     color: #d63031;
     text-decoration: none;
@@ -37,6 +75,11 @@ header {
 
 .banner {
     text-align: center;
+    margin-top: 80px;
+}
+
+.banner img {
+    margin-bottom: 80px;
 }
 
 .title1 {
@@ -329,7 +372,7 @@ footer {
 
 [data-anime] {
     opacity: 0;
-    transition: .3s;
+    transition: .6s;
 }
 
 [data-anime="left"] {
@@ -459,14 +502,10 @@ footer {
     }
 }
 
-@media screen and (min-width:700px) {}
-
 @media screen and (min-width:1000px) {
-    .banner {
-        margin-top: 50px;
-    }
     .title1 {
         padding: 10px;
+        margin-top: 70px;
         font-size: 2.5rem;
     }
     .banner p {
