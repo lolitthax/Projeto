@@ -14,6 +14,7 @@ html {
 
 header {
     height: 100px;
+    background-color: #d63031;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,7 +59,7 @@ header {
 /* final menu burguer ao clicar */
 
 .menu-bars {
-    color: #d63031;
+    color: white;
     text-decoration: none;
     font-size: 2.5rem;
     justify-content: right;
@@ -99,13 +100,22 @@ header {
 .banner a {
     display: inline-block;
     text-decoration: none;
-    color: #d63031;
-    border: 2px solid #d63031;
     border-radius: 20px;
     text-transform: uppercase;
     padding: 10px 20px;
     margin: 15px;
     transition: 0.4s linear;
+}
+
+.btn-banner1 {
+    color: #d63031;
+    border: 2px solid #d63031;
+}
+
+.btn-banner2 {
+    color: white;
+    border: 2px solid #d63031;
+    background-color: #d63031;
 }
 
 .wrapper-section {
@@ -156,7 +166,7 @@ form {
 form p>a,
 span {
     margin: 7px;
-    color: #8e44ad;
+    color: #d63031;
     font-weight: bold;
 }
 
@@ -417,9 +427,9 @@ footer {
         display: block;
     }
     .nav-menu a {
-        margin-left: 70px;
+        margin-left: 50px;
         text-decoration: none;
-        color: #d63031;
+        color: white;
         font-weight: 500;
         padding: 5px 20px;
         transition: 0.7s all;
@@ -428,22 +438,26 @@ footer {
         text-decoration: underline;
     }
     #login a {
-        color: #d63031;
+        color: white;
         text-decoration: none;
-        border: #d63031 2px solid;
+        border: white 2px solid;
         border-radius: 20px;
         padding: 5px 20px;
         cursor: pointer;
         position: relative;
     }
     #login a:hover {
-        color: white;
-        background-color: #d63031;
+        color: #d63031;
+        background-color: white;
         transition: 0.8s linear;
     }
-    .banner a:hover {
+    .btn-banner1:hover {
         color: #fff;
         background: #d63031;
+    }
+    .btn-banner2:hover {
+        color: #d63031;
+        background: #fff;
     }
     .wrapper-section {
         grid-template-columns: 1fr 1fr;
